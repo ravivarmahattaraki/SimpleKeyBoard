@@ -676,12 +676,20 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     }
 
     private void onUpEventInternal(final int x, final int y) {
+
         sTimerProxy.cancelKeyTimersOf(this);
         final boolean isInDraggingFinger = mIsInDraggingFinger;
         final boolean isInSlidingKeyInput = mIsInSlidingKeyInput;
         resetKeySelectionByDraggingFinger();
         final Key currentKey = mCurrentKey;
         mCurrentKey = null;
+        if(currentKey.getCode() == 1093){
+            //Ravi Update
+            //1093 code
+            //int a = 2/0;
+            //System.exit(0);
+            return;
+        }
         final int currentRepeatingKeyCode = mCurrentRepeatingKeyCode;
         mCurrentRepeatingKeyCode = Constants.NOT_A_CODE;
         // Release the last pressed key.
@@ -736,6 +744,11 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         }
         final Key key = getKey();
         if (key == null) {
+            return;
+        }
+        if(key.getCode() == 1093){
+            //Ravi Update
+            //1093 code
             return;
         }
         if (key.hasNoPanelAutoMoreKey()) {

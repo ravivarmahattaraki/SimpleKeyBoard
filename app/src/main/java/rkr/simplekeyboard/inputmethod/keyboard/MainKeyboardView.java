@@ -32,6 +32,8 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Toast;
 
 import java.util.WeakHashMap;
 
@@ -95,6 +97,9 @@ import rkr.simplekeyboard.inputmethod.latin.utils.TypefaceUtils;
 public final class MainKeyboardView extends KeyboardView implements MoreKeysPanel.Controller, DrawingProxy {
     private static final String TAG = MainKeyboardView.class.getSimpleName();
 
+    public interface IKeyEvent{
+        public void keyPressed();
+    }
     /** Listener for {@link KeyboardActionListener}. */
     private KeyboardActionListener mKeyboardActionListener;
 
@@ -340,6 +345,17 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     // Implements {@link DrawingProxy#onKeyPressed(Key,boolean)}.
     @Override
     public void onKeyPressed(final Key key, final boolean withPreview) {
+        if(key.getCode() == 1093){
+            //Ravi Update
+            //1093 code
+            //int a = 2/0;
+            //System.exit(0);
+            /*this.closing();
+            this.onDismissMoreKeysPanel();
+            onDetachedFromWindow();*/
+            return;
+
+        }
         key.onPressed();
         invalidateKey(key);
         if (withPreview && !key.noKeyPreview()) {
@@ -509,6 +525,18 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         if (getKeyboard() == null) {
             return false;
         }
+
+        Key key = mKeyDetector.detectHitKey((int) event.getX(), (int) event.getY());
+
+        if(key != null && key.getCode() == 1093){
+            //Ravi Update
+            //1093 code
+            //int a = 2/0;
+            //System.exit(0);
+            //Toast.makeText(getContext(), ""+event.getAction(),Toast.LENGTH_LONG).show();
+
+        }
+
         if (mNonDistinctMultitouchHelper != null) {
             if (event.getPointerCount() > 1 && mTimerHandler.isInKeyRepeat()) {
                 // Key repeating timer will be canceled if 2 or more keys are in action.
