@@ -47,9 +47,11 @@
         </case>
         <default>
             <Key
-                latin:keySpec="!text/keyspec_comma"
+                latin:keySpec="\u0445"
                 latin:keyLabelFlags="hasPopupHint"
                 latin:keyStyle="settingsMoreKeysStyle" />
         </default>
+        <!---->
+        <!--!text/keyspec_comma-->
     </switch>
 </merge>

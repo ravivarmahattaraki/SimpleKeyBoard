@@ -21,7 +21,8 @@
     <include
         latin:keyboardLayout="@xml/key_styles_less_greater" />
     <Key
-        latin:keySpec="!text/keyspec_comma" />
+        latin:keySpec="\u0445" />
+    <!--!text/keyspec_comma-->
     <Key
         latin:keyStyle="lessKeyStyle" />
     <include
