@@ -49,8 +49,9 @@
             <Key
                 latin:keySpec="!text/keyspec_comma"
                 latin:keyLabelFlags="hasPopupHint"
-                latin:keyStyle="settingsMoreKeysStyle" />
+                 />
         </default>
+        <!--latin:keyStyle="settingsMoreKeysStyle"-->
         <!--\u0445-->
         <!--Ravi update-->
         <!--!text/keyspec_comma-->
