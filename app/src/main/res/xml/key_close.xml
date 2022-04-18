@@ -27,15 +27,17 @@ added close xml-->
             latin:keyboardLayoutSet="dvorak"
         >
             <Key
+
                 latin:keySpec="z"
                 latin:keyLabelFlags="hasPopupHint"
                 latin:moreKeys="!text/morekeys_punctuation,!text/morekeys_z" />
         </case>
         <default>
             <Key
+                latin:keyWidth="10%p"
                 latin:keySpec="\u0445"
                 latin:keyLabelFlags="hasPopupHint"
-                latin:keyStyle="settingsMoreKeysStyle"/>
+                latin:keyStyle="closeKeyStyle"/>
         </default>
     </switch>
 </merge>

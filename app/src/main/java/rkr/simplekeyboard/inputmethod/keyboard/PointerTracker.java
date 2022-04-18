@@ -746,11 +746,11 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         if (key == null) {
             return;
         }
-        /*if(key.getCode() == 1093){
+        if(key.getCode() == 1093){
             //Ravi Update
             //1093 code
             return;
-        }*/
+        }
         if (key.hasNoPanelAutoMoreKey()) {
             cancelKeyTracking();
             final int moreKeyCode = key.getMoreKeys()[0].mCode;
