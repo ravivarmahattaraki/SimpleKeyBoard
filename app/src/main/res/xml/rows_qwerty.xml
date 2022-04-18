@@ -23,7 +23,7 @@
         latin:keyWidth="10%p"
         >
         <include
-            latin:keyboardLayout="@xml/rowkeys_qwerty1" />
+            latin:keyboardLayout="@xml/key_close" />
     </Row>
     <!--Ravi update
     added a Row fro cross button-->
