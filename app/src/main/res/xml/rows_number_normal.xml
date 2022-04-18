@@ -21,6 +21,14 @@
 <merge
     xmlns:latin="http://schemas.android.com/apk/res-auto"
 >
+    <!--Ravi Update
+    added close row in key board-->
+    <Row
+        latin:keyWidth="10%p"
+        >
+        <include
+            latin:keyboardLayout="@xml/key_close" />
+    </Row>
     <Row>
         <Key
             latin:keySpec="1"
