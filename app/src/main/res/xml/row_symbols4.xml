@@ -20,7 +20,8 @@
 
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto" >
     <Key
-        latin:keySpec="\u0445" />
+        latin:keySpec="!text/keyspec_comma" />
+    <!--\u0445-->
     <!--!text/keyspec_comma-->
     <Key
         latin:keySpec="_" />

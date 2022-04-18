@@ -683,13 +683,13 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         resetKeySelectionByDraggingFinger();
         final Key currentKey = mCurrentKey;
         mCurrentKey = null;
-        if(currentKey.getCode() == 1093){
+       /* if(currentKey.getCode() == 1093){
             //Ravi Update
             //1093 code
             //int a = 2/0;
             //System.exit(0);
             return;
-        }
+        }*/
         final int currentRepeatingKeyCode = mCurrentRepeatingKeyCode;
         mCurrentRepeatingKeyCode = Constants.NOT_A_CODE;
         // Release the last pressed key.
@@ -746,11 +746,11 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         if (key == null) {
             return;
         }
-        if(key.getCode() == 1093){
+        /*if(key.getCode() == 1093){
             //Ravi Update
             //1093 code
             return;
-        }
+        }*/
         if (key.hasNoPanelAutoMoreKey()) {
             cancelKeyTracking();
             final int moreKeyCode = key.getMoreKeys()[0].mCode;

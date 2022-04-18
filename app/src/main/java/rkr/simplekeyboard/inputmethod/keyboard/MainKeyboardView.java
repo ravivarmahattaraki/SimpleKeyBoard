@@ -345,17 +345,17 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     // Implements {@link DrawingProxy#onKeyPressed(Key,boolean)}.
     @Override
     public void onKeyPressed(final Key key, final boolean withPreview) {
-        if(key.getCode() == 1093){
+        /*if(key.getCode() == 1093){
             //Ravi Update
             //1093 code
             //int a = 2/0;
             //System.exit(0);
-            /*this.closing();
+            *//*this.closing();
             this.onDismissMoreKeysPanel();
-            onDetachedFromWindow();*/
+            onDetachedFromWindow();*//*
             return;
 
-        }
+        }*/
         key.onPressed();
         invalidateKey(key);
         if (withPreview && !key.noKeyPreview()) {
@@ -528,14 +528,14 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
         Key key = mKeyDetector.detectHitKey((int) event.getX(), (int) event.getY());
 
-        if(key != null && key.getCode() == 1093){
+        /*if(key != null && key.getCode() == 1093){
             //Ravi Update
             //1093 code
             //int a = 2/0;
             //System.exit(0);
             //Toast.makeText(getContext(), ""+event.getAction(),Toast.LENGTH_LONG).show();
 
-        }
+        }*/
 
         if (mNonDistinctMultitouchHelper != null) {
             if (event.getPointerCount() > 1 && mTimerHandler.isInKeyRepeat()) {

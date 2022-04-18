@@ -897,14 +897,14 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @Override
     public void onPressKey(final int primaryCode, final int repeatCount,
             final boolean isSinglePointer) {
-        if(primaryCode == 1093){
+       /* if(primaryCode == 1093){
             //Ravi Update
             //1093 code
             //int a = 2/0;
             //System.exit(0);
             hideWindow();
             return;
-        }
+        }*/
         mKeyboardSwitcher.onPressKey(primaryCode, isSinglePointer, getCurrentAutoCapsState(),
                 getCurrentRecapitalizeState());
         hapticAndAudioFeedback(primaryCode, repeatCount);

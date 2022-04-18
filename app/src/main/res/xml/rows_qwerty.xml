@@ -21,6 +21,14 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <Row
         latin:keyWidth="10%p"
+        >
+        <include
+            latin:keyboardLayout="@xml/rowkeys_qwerty1" />
+    </Row>
+    <!--Ravi update
+    added a Row fro cross button-->
+    <Row
+        latin:keyWidth="10%p"
     >
         <include
             latin:keyboardLayout="@xml/rowkeys_qwerty1" />
@@ -48,4 +56,5 @@
     </Row>
     <include
         latin:keyboardLayout="@xml/row_qwerty4" />
+    <!--Ravi update-->
 </merge>

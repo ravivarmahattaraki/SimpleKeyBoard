@@ -93,9 +93,10 @@ public class KeyboardParams {
     }
 
     public void onAddKey(final Key newKey) {
-        if(newKey.getCode() == 44){
+        /*if(newKey.getCode() == 44){
+            //ravi update
             return;
-        }
+        }*/
         final Key key = mUniqueKeysCache.getUniqueKey(newKey);
         final boolean isSpacer = key.isSpacer();
         if (isSpacer && key.getWidth() == 0) {
