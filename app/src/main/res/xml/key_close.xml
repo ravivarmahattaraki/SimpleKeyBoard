@@ -35,7 +35,6 @@ added close xml-->
         <default>
             <Key
                 latin:keyWidth="10%p"
-                latin:keySpec="\u0445"
                 latin:keyLabelFlags="hasPopupHint"
                 latin:keyStyle="closeKeyStyle"/>
         </default>

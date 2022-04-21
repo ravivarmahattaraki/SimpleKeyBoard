@@ -152,6 +152,8 @@
         <attr name="iconLanguageSwitchKey" format="reference" />
         <attr name="iconZwnjKey" format="reference" />
         <attr name="iconZwjKey" format="reference" />
+        <attr name="iconCloseKey" format="reference" />
+        <!--Ravi update added close key attribute for icon-->
     </declare-styleable>
 
     <declare-styleable name="Keyboard_Key">

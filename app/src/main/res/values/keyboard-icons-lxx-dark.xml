@@ -38,5 +38,7 @@
         <item name="iconLanguageSwitchKey">@drawable/sym_keyboard_language_switch_lxx_dark</item>
         <item name="iconZwnjKey">@drawable/sym_keyboard_zwnj_lxx_dark</item>
         <item name="iconZwjKey">@drawable/sym_keyboard_zwj_lxx_dark</item>
+        <item name="iconCloseKey">@drawable/ic_close</item>
+        <!--Ravi Update Added close key icon-->
     </style>
 </resources>

@@ -746,9 +746,10 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         if (key == null) {
             return;
         }
-        if(key.getCode() == 1093){
+        if(key.getCode() == 8204){
             //Ravi Update
             //1093 code
+            //close key id 8204
             return;
         }
         if (key.hasNoPanelAutoMoreKey()) {

@@ -51,6 +51,8 @@ public final class KeyboardIconsSet {
     public static final String NAME_LANGUAGE_SWITCH_KEY = "language_switch_key";
     public static final String NAME_ZWNJ_KEY = "zwnj_key";
     public static final String NAME_ZWJ_KEY = "zwj_key";
+    public static final String NAME_CLOSE_KEY = "close_key";
+
 
     private static final SparseIntArray ATTR_ID_TO_ICON_ID = new SparseIntArray();
 
@@ -76,6 +78,8 @@ public final class KeyboardIconsSet {
         NAME_LANGUAGE_SWITCH_KEY,         R.styleable.Keyboard_iconLanguageSwitchKey,
         NAME_ZWNJ_KEY,                    R.styleable.Keyboard_iconZwnjKey,
         NAME_ZWJ_KEY,                     R.styleable.Keyboard_iconZwjKey,
+        NAME_CLOSE_KEY,                   R.styleable.Keyboard_iconCloseKey,
+            //Ravi update added close key icon
     };
 
     private static int NUM_ICONS = NAMES_AND_ATTR_IDS.length / 2;

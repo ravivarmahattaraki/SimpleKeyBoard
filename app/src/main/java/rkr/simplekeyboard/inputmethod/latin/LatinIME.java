@@ -897,11 +897,12 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @Override
     public void onPressKey(final int primaryCode, final int repeatCount,
             final boolean isSinglePointer) {
-        if(primaryCode == 1093){
+        if(primaryCode == 8204){
             //Ravi Update
             //1093 code
             //int a = 2/0;
             //System.exit(0);
+            //close icon key id 8204
             hideWindow();
             return;
         }

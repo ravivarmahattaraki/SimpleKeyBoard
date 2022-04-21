@@ -136,8 +136,11 @@
 
     <key-style
         latin:styleName="closeKeyStyle"
-        latin:keySpec="!icon/space_key|!code/key_space"
+        latin:keySpec="!icon/close_key|&#x200C;"
         latin:backgroundType="action" />
+    <!--!icon/close|!code/close-->
+    <!--!icon/zwnj_key|&#x200C;-->
+    <!--    ?!icon/space_key|!code/key_space-->
     <!--Ravi update
     added style for close key-->
 </merge>
